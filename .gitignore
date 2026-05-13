@@ -1,0 +1,9 @@
+node_modules
+node_modules/
+.wwebjs_cache/
+AuthFallback/
+AuthRuntime-*/
+Auth_bak/
+stored_media/
+.bot.lock
+*.log

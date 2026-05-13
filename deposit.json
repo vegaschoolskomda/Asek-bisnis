@@ -1,0 +1,106 @@
+{
+  "transactions": [
+    {
+      "id": "DEP8589",
+      "userId": "128025073037516@c.us",
+      "amount": 10000,
+      "status": "success",
+      "createdAt": "2026-05-12T01:38:36.022Z",
+      "updatedAt": "2026-05-12T01:47:21.895Z",
+      "proof": {
+        "receivedAt": "2026-05-12T01:42:01.336Z",
+        "messageId": "false_128025073037516@lid_A556731FFBF2333EC32A5A9BDE7213B6"
+      }
+    },
+    {
+      "id": "DEP1496",
+      "userId": "178516641460341@c.us",
+      "amount": 1,
+      "status": "success",
+      "createdAt": "2026-05-12T01:49:14.431Z",
+      "updatedAt": "2026-05-12T01:50:04.928Z",
+      "proof": {
+        "receivedAt": "2026-05-12T01:49:30.069Z",
+        "messageId": "false_178516641460341@lid_3EB08851D54E90B1E30202"
+      }
+    },
+    {
+      "id": "DEP8866",
+      "userId": "128025073037516@c.us",
+      "userNumberId": "6283189121617@c.us",
+      "amount": 10,
+      "status": "success",
+      "createdAt": "2026-05-12T02:17:12.512Z",
+      "updatedAt": "2026-05-12T02:18:23.641Z",
+      "proof": {
+        "receivedAt": "2026-05-12T02:18:08.328Z",
+        "messageId": "false_120363409988023584@g.us_A587425F8C1FD514CC2D4CBA29D52860_128025073037516@lid"
+      }
+    },
+    {
+      "id": "DEP9570",
+      "userId": "178516641460341@c.us",
+      "userNumberId": "178516641460341@c.us",
+      "amount": 1000000000,
+      "status": "success",
+      "createdAt": "2026-05-12T02:26:19.862Z",
+      "updatedAt": "2026-05-12T02:27:23.943Z",
+      "proof": {
+        "receivedAt": "2026-05-12T02:26:58.133Z",
+        "messageId": "false_178516641460341@lid_3EB06969BCCEE9A935DCC7"
+      }
+    }
+  ],
+  "users": {
+    "128025073037516@c.us": {
+      "balance": 10000,
+      "updatedAt": "2026-05-12T01:47:21.895Z"
+    },
+    "178516641460341@c.us": {
+      "balance": 1000000001,
+      "updatedAt": "2026-05-12T02:27:23.943Z"
+    },
+    "6283189121617@c.us": {
+      "balance": 10,
+      "updatedAt": "2026-05-12T02:18:23.641Z"
+    }
+  },
+  "history": [
+    {
+      "id": "DEP8589",
+      "userId": "128025073037516@c.us",
+      "amount": 10000,
+      "status": "success",
+      "actionBy": "128025073037516@c.us",
+      "actionAt": "2026-05-12T01:47:21.895Z"
+    },
+    {
+      "id": "DEP1496",
+      "userId": "178516641460341@c.us",
+      "amount": 1,
+      "status": "success",
+      "actionBy": "128025073037516@c.us",
+      "actionAt": "2026-05-12T01:50:04.928Z"
+    },
+    {
+      "id": "DEP8866",
+      "userId": "128025073037516@c.us",
+      "amount": 10,
+      "status": "success",
+      "actionBy": "128025073037516@c.us",
+      "actionAt": "2026-05-12T02:18:23.641Z"
+    },
+    {
+      "id": "DEP9570",
+      "userId": "178516641460341@c.us",
+      "amount": 1000000000,
+      "status": "success",
+      "actionBy": "128025073037516@c.us",
+      "actionAt": "2026-05-12T02:27:23.943Z"
+    }
+  ],
+  "meta": {
+    "lastActiveUserId": "201576371241080@c.us",
+    "lastActiveAt": "2026-05-13T07:21:17.149Z"
+  }
+}
