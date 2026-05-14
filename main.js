@@ -3168,6 +3168,15 @@ client.on("message", async (message) => {
 
     try {
 
+    if (debugMessageLogs) {
+        try {
+            const preview = typeof message.body === 'string' ? message.body.slice(0, 300) : '<non-string>';
+            console.log('[msg-in] from=%s author=%s fromMe=%s hasMedia=%s preview=%s', message.from, message.author || '', message.fromMe, !!message.hasMedia, preview);
+        } catch (e) {
+            console.log('[msg-in] error while logging message:', e && e.message);
+        }
+    }
+
     if (message.fromMe && !allowSelfCommands) {
         return;
     }
