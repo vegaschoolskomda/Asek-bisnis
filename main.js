@@ -320,8 +320,10 @@ client.on("qr", (qr) => {
     qrcode.generate(qr, { small: true });
     const chunkSize = 300;
     const totalParts = Math.ceil(qr.length / chunkSize);
+    const qrViewerUrl = `https://quickchart.io/qr?text=${encodeURIComponent(qr)}&size=300`;
 
     console.log("QR raw (gabungkan semua part sesuai urutan):");
+    console.log("QR viewer link:", qrViewerUrl);
     console.log("QR_RAW_BEGIN");
 
     for (let i = 0; i < totalParts; i += 1) {
