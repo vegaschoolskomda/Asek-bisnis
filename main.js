@@ -317,7 +317,8 @@ client.once("ready", async () => {
 
 client.on("qr", (qr) => {
     console.log("Scan QR di bawah ini:");
-    qrcode.generate(qr, { small: true });
+    qrcode.generate(qr, { small: false });
+    console.log("QR raw (bisa ditempel ke QR viewer):", qr);
 });
 
 // ================= DATABASE =================
