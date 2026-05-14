@@ -318,7 +318,19 @@ client.once("ready", async () => {
 client.on("qr", (qr) => {
     console.log("Scan QR di bawah ini:");
     qrcode.generate(qr, { small: true });
-    console.log("QR raw (bisa ditempel ke QR viewer):", qr);
+    const chunkSize = 300;
+    const totalParts = Math.ceil(qr.length / chunkSize);
+
+    console.log("QR raw (gabungkan semua part sesuai urutan):");
+    console.log("QR_RAW_BEGIN");
+
+    for (let i = 0; i < totalParts; i += 1) {
+        const start = i * chunkSize;
+        const part = qr.slice(start, start + chunkSize);
+        console.log(`QR_RAW_PART_${i + 1}/${totalParts}: ${part}`);
+    }
+
+    console.log("QR_RAW_END");
 });
 
 // ================= DATABASE =================
